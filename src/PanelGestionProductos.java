@@ -16,13 +16,11 @@ public class PanelGestionProductos extends JPanel {
     public PanelGestionProductos() {
         setLayout(new BorderLayout());
 
-        // Lista de productos (simulada)
         listaProductos = new ArrayList<>();
         listaProductos.add("Producto 1 - Descripción 1");
         listaProductos.add("Producto 2 - Descripción 2");
         listaProductos.add("Producto 3 - Descripción 3");
 
-        // Modelo para la lista de productos
         modeloLista = new DefaultListModel<>();
         for (String producto : listaProductos) {
             modeloLista.addElement(producto);
@@ -30,12 +28,10 @@ public class PanelGestionProductos extends JPanel {
         lista = new JList<>(modeloLista);
         JScrollPane scrollPane = new JScrollPane(lista);
 
-        // Botones
         botonAgregar = new JButton("Agregar Producto");
         botonEditar = new JButton("Editar Producto");
         botonBorrar = new JButton("Borrar Producto");
 
-        // Agregar componentes al panel
         add(scrollPane, BorderLayout.CENTER);
 
         JPanel panelBotones = new JPanel(new GridLayout(1, 3, 5, 5));
@@ -44,31 +40,33 @@ public class PanelGestionProductos extends JPanel {
         panelBotones.add(botonBorrar);
         add(panelBotones, BorderLayout.SOUTH);
 
-        // Manejadores de eventos para los botones
         botonAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Aquí iría la lógica para agregar un nuevo producto
-                // Por ahora, simplemente añadiremos un producto ficticio a la lista
-                String nuevoProducto = "Nuevo Producto - Descripción";
-                listaProductos.add(nuevoProducto);
-                modeloLista.addElement(nuevoProducto);
+                String nuevoProducto = JOptionPane.showInputDialog(PanelGestionProductos.this,
+                        "Ingrese el nombre del nuevo producto:");
+                if (nuevoProducto != null && !nuevoProducto.isEmpty()) {
+                    listaProductos.add(nuevoProducto);
+                    modeloLista.addElement(nuevoProducto);
+                }
             }
         });
 
         botonEditar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí iría la lógica para editar el producto seleccionado en la lista
-                // Por ahora, simplemente mostraremos un mensaje de demostración
                 int indiceSeleccionado = lista.getSelectedIndex();
                 if (indiceSeleccionado != -1) {
-                    String productoSeleccionado = listaProductos.get(indiceSeleccionado);
-                    JOptionPane.showMessageDialog(PanelGestionProductos.this,
-                            "Editando el producto: " + productoSeleccionado);
+                    String nuevoNombre = JOptionPane.showInputDialog(PanelGestionProductos.this,
+                            "Ingrese el nuevo nombre del producto:");
+                    if (nuevoNombre != null && !nuevoNombre.isEmpty()) {
+                        listaProductos.set(indiceSeleccionado, nuevoNombre);
+                        modeloLista.set(indiceSeleccionado, nuevoNombre);
+                    }
                 } else {
                     JOptionPane.showMessageDialog(PanelGestionProductos.this,
-                            "Seleccione un producto para editar");
+                            "Seleccione un producto para editar", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -76,15 +74,13 @@ public class PanelGestionProductos extends JPanel {
         botonBorrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí iría la lógica para borrar el producto seleccionado de la lista
-                // Por ahora, simplemente lo eliminaremos de la lista y del modelo
                 int indiceSeleccionado = lista.getSelectedIndex();
                 if (indiceSeleccionado != -1) {
                     listaProductos.remove(indiceSeleccionado);
                     modeloLista.removeElementAt(indiceSeleccionado);
                 } else {
                     JOptionPane.showMessageDialog(PanelGestionProductos.this,
-                            "Seleccione un producto para borrar");
+                            "Seleccione un producto para borrar", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });

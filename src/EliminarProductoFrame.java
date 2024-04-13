@@ -56,7 +56,7 @@ public class EliminarProductoFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        new EliminarProductoFrame(); // Para propósitos de prueba, simplemente mostramos la ventana.
+        new EliminarProductoFrame();
     }
 }
 

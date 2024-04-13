@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5e49d7-cfd4-4d38-9529-1dcac77fd9ae" name="Changes" comment="" />
+    <list default="true" id="2f5e49d7-cfd4-4d38-9529-1dcac77fd9ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto final1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto final1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ActualizarUsuarioFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActualizarUsuarioFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AgregarProductoForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgregarProductoForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EliminarProductoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EliminarProductoFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EliminarProductoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EliminarProductoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GestionProductosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionProductosFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GestionUsuariosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionUsuariosFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelGestionProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelGestionProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegistroFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegistroUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroUsuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2egNEqNKssx2cnXHLDX6REU4SK0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,13 +55,81 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DBConnection.executor": "Run",
+    "Application.DatabaseConnection.executor": "Run",
+    "Application.GestionProductosFrame.executor": "Run",
+    "Application.GestionUsuariosFrame.executor": "Run",
+    "Application.LoginFrame.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PanelGestionProductos.executor": "Run",
+    "Application.PanelPrincipal.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ronal/IdeaProjects/proyecto final1/lib/mysql-connector-j-8.3.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DatabaseConnection" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestionUsuariosFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GestionUsuariosFrame" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LoginFrame" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PanelPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PanelPrincipal" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DatabaseConnection" />
+        <item itemvalue="Application.LoginFrame" />
+        <item itemvalue="Application.PanelPrincipal" />
+        <item itemvalue="Application.GestionUsuariosFrame" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -43,8 +145,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712322152731</updated>
-      <workItem from="1712322153748" duration="3000" />
+      <workItem from="1712322153748" duration="25361000" />
+      <workItem from="1712610380856" duration="1026000" />
+      <workItem from="1712703461495" duration="1399000" />
+      <workItem from="1713019175416" duration="407000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LoginFrame.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ActualizarUsuarioFrame.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

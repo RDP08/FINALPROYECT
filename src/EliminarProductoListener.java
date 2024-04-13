@@ -1,3 +1,5 @@
-public interface EliminarProductoListener {
-    void onEliminarProducto(int[] idsProductos);
+
+interface EliminarProductoListener {
+    void eliminarProducto(int id);
 }
+

@@ -43,10 +43,25 @@ public class RegistroFrame extends JFrame {
         botonRegistrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí iría la lógica para registrar al usuario
-                JOptionPane.showMessageDialog(RegistroFrame.this, "Usuario registrado correctamente");
-                // Cerrar la ventana de registro después de registrar al usuario
-                dispose();
+                Usuario nuevoUsuario = new Usuario(
+                        campoNombreUsuario.getText(),
+                        new String(campoContraseña.getPassword()),
+                        campoNombre.getText(),
+                        campoApellido.getText(),
+                        campoCorreoElectronico.getText(),
+                        campoTelefono.getText()
+                );
+                boolean registroExitoso = RegistroUsuario.registrarUsuario(nuevoUsuario);
+
+                if (registroExitoso) {
+                    // Mostrar un mensaje de éxito
+                    JOptionPane.showMessageDialog(RegistroFrame.this, "Usuario registrado correctamente");
+                    // Cerrar la ventana de registro después de registrar al usuario
+                    dispose();
+                } else {
+                    // Mostrar un mensaje de error si falla el registro
+                    JOptionPane.showMessageDialog(RegistroFrame.this, "Error al registrar usuario");
+                }
             }
         });
 

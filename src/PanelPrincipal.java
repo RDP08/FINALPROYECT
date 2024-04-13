@@ -13,30 +13,42 @@ public class PanelPrincipal extends JFrame {
     }
 
     private void inicializarComponentes() {
-        JButton botonGestionUsuarios = new JButton("Gestionar Usuarios");
-        JButton botonGestionProductos = new JButton("Gestionar Productos");
-
-        botonGestionUsuarios.addActionListener(new ActionListener() {
+        JButton botonGestionarProductos = new JButton("Gestionar Productos");
+        botonGestionarProductos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para abrir el panel de gestión de usuarios
-                JOptionPane.showMessageDialog(PanelPrincipal.this, "Abriendo panel de gestión de usuarios");
+                GestionProductosFrame gestionProductosFrame = new GestionProductosFrame();
+                gestionProductosFrame.setVisible(true);
             }
         });
 
-        botonGestionProductos.addActionListener(new ActionListener() {
+        JButton botonGestionarUsuarios = new JButton("Gestionar Usuarios");
+        botonGestionarUsuarios.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para abrir el panel de gestión de productos
-                JOptionPane.showMessageDialog(PanelPrincipal.this, "Abriendo panel de gestión de productos");
+                GestionUsuariosFrame gestionUsuariosFrame = new GestionUsuariosFrame();
+                gestionUsuariosFrame.setVisible(true);
             }
         });
 
-        JPanel panel = new JPanel(new GridLayout(2, 1));
-        panel.add(botonGestionUsuarios);
-        panel.add(botonGestionProductos);
+        JButton botonCerrarSesion = new JButton("Cerrar Sesión");
+        botonCerrarSesion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                LoginFrame loginFrame = new LoginFrame();
+                loginFrame.setVisible(true);
+            }
+        });
 
-        add(panel);
+        JPanel panelBotones = new JPanel(new GridLayout(3, 1, 5, 5));
+        panelBotones.add(botonGestionarProductos);
+        panelBotones.add(botonGestionarUsuarios);
+        panelBotones.add(botonCerrarSesion);
+        add(panelBotones, BorderLayout.CENTER);
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new PanelPrincipal().setVisible(true));
     }
 }
-

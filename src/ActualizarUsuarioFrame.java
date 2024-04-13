@@ -6,8 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ActualizarUsuarioFrame extends JFrame {
-    private JTextField txtNombre, txtApellido, txtTelefono, txtEmail, txtUsuario, txtContraseña;
-    private JButton btnActualizar;
+    public final JTextField txtNombre, txtApellido, txtTelefono, txtEmail, txtUsuario, txtContraseña;
+    private final JButton btnActualizar;
     private int usuarioId;
 
     public ActualizarUsuarioFrame(int usuarioId) {

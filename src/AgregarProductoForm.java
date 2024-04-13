@@ -2,11 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 public class AgregarProductoForm extends JFrame {
     private JTextField txtNombre;
-    private JTextField txtMarca;
-    private JTextField txtCategoria;
+    private JTextField descripcion;
     private JTextField txtPrecio;
     private JTextField txtCantidad;
 
@@ -22,19 +24,16 @@ public class AgregarProductoForm extends JFrame {
         txtNombre = new JTextField();
         panel.add(txtNombre);
 
-        panel.add(new JLabel("Marca:"));
-        txtMarca = new JTextField();
-        panel.add(txtMarca);
+        panel.add(new JLabel("Descripcion:"));
+        descripcion = new JTextField(); // Inicialización correcta
+        panel.add(descripcion);
 
-        panel.add(new JLabel("Categoría:"));
-        txtCategoria = new JTextField();
-        panel.add(txtCategoria);
 
         panel.add(new JLabel("Precio:"));
         txtPrecio = new JTextField();
         panel.add(txtPrecio);
 
-        panel.add(new JLabel("Cantidad:"));
+        panel.add(new JLabel("Cantidad Disponible:")); // Cambiado a "Cantidad Disponible"
         txtCantidad = new JTextField();
         panel.add(txtCantidad);
 
@@ -60,11 +59,39 @@ public class AgregarProductoForm extends JFrame {
     }
 
     private void agregarProducto() {
-        // Aquí iría la lógica para guardar el nuevo producto en la base de datos
-        // Por simplicidad, mostramos un mensaje indicando que la funcionalidad aún no está implementada
-        JOptionPane.showMessageDialog(this, "Funcionalidad de agregar producto aún no implementada.", "Información", JOptionPane.INFORMATION_MESSAGE);
-        dispose(); // Cerramos el formulario después de agregar el producto
+        // Obtener los datos del formulario
+        String nombre = txtNombre.getText();
+        String Descripcion = descripcion.getText(); // Modificado para obtener la descripción
+        double precio = Double.parseDouble(txtPrecio.getText());
+        int cantidad = Integer.parseInt(txtCantidad.getText()); // Cambiado a "cantidaddisponible"
+
+        // Crear la conexión a la base de datos
+        try (Connection conn = DatabaseConnection.getConnection()) {
+            // Crear la consulta SQL para insertar el nuevo producto
+            String sql = "INSERT INTO productos (nombre, Descripcion, precio, cantidaddisponible) VALUES (?, ?, ?, ?)";
+            try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                // Establecer los parámetros de la consulta
+                pstmt.setString(1, nombre);
+                pstmt.setString(2, Descripcion);
+                pstmt.setDouble(3, precio);
+                pstmt.setInt(4, cantidad);
+
+                // Ejecutar la consulta
+                pstmt.executeUpdate();
+
+                // Mostrar mensaje de éxito
+                JOptionPane.showMessageDialog(this, "Producto agregado correctamente.", "Información", JOptionPane.INFORMATION_MESSAGE);
+            }
+        } catch (SQLException e) {
+            // Mostrar mensaje de error en caso de fallo
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Error al agregar el producto.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
+        // Cerrar el formulario después de agregar el producto
+        dispose();
     }
+
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
