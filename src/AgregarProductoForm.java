@@ -59,36 +59,27 @@ public class AgregarProductoForm extends JFrame {
     }
 
     private void agregarProducto() {
-        // Obtener los datos del formulario
         String nombre = txtNombre.getText();
-        String Descripcion = descripcion.getText(); // Modificado para obtener la descripción
+        String Descripcion = descripcion.getText();
         double precio = Double.parseDouble(txtPrecio.getText());
-        int cantidad = Integer.parseInt(txtCantidad.getText()); // Cambiado a "cantidaddisponible"
+        int cantidad = Integer.parseInt(txtCantidad.getText());
 
-        // Crear la conexión a la base de datos
         try (Connection conn = DatabaseConnection.getConnection()) {
-            // Crear la consulta SQL para insertar el nuevo producto
             String sql = "INSERT INTO productos (nombre, Descripcion, precio, cantidaddisponible) VALUES (?, ?, ?, ?)";
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                // Establecer los parámetros de la consulta
                 pstmt.setString(1, nombre);
                 pstmt.setString(2, Descripcion);
                 pstmt.setDouble(3, precio);
                 pstmt.setInt(4, cantidad);
 
-                // Ejecutar la consulta
                 pstmt.executeUpdate();
 
-                // Mostrar mensaje de éxito
                 JOptionPane.showMessageDialog(this, "Producto agregado correctamente.", "Información", JOptionPane.INFORMATION_MESSAGE);
             }
         } catch (SQLException e) {
-            // Mostrar mensaje de error en caso de fallo
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error al agregar el producto.", "Error", JOptionPane.ERROR_MESSAGE);
         }
-
-        // Cerrar el formulario después de agregar el producto
         dispose();
     }
 

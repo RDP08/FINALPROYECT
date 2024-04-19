@@ -9,7 +9,6 @@ public class Usuario {
     public Usuario() {
     }
 
-    // Constructor con argumentos
     public Usuario(String nombreUsuario, String contraseña, String nombre, String apellido, String correoElectronico, String telefono) {
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;

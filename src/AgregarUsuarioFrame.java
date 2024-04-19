@@ -67,7 +67,7 @@ public class AgregarUsuarioFrame extends JFrame {
                 int filasAfectadas = ps.executeUpdate();
                 if (filasAfectadas > 0) {
                     JOptionPane.showMessageDialog(this, "Usuario agregado correctamente.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-                    this.dispose(); // Cerrar la ventana después de agregar el usuario
+                    this.dispose();
                 } else {
                     JOptionPane.showMessageDialog(this, "Error al agregar el usuario.", "Error", JOptionPane.ERROR_MESSAGE);
                 }

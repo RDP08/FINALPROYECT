@@ -54,7 +54,7 @@ public class GestionProductosFrame extends JFrame {
 
     private void cargarDatosProductos() {
         DefaultTableModel modelo = (DefaultTableModel) tablaProductos.getModel();
-        modelo.setRowCount(0); // Limpiar la tabla antes de cargar datos
+        modelo.setRowCount(0);
         try (Connection conn = DatabaseConnection.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT * FROM productos")) {
@@ -79,13 +79,10 @@ public class GestionProductosFrame extends JFrame {
     }
 
     private void accionActualizarProducto(ActionEvent e) {
-        // Obtener el id del producto
-        int productoId = obtenerIdProductoDesdeInterfaz(); // Reemplaza esta línea con la forma de obtener el id del producto
+        int productoId = obtenerIdProductoDesdeInterfaz();
 
-        // Crear una instancia de ActualizarProductoFrame con el id del producto
         ActualizarProductoFrame actualizarProductoFrame = new ActualizarProductoFrame(productoId);
 
-        // Hacer visible la ventana de actualización de producto
         actualizarProductoFrame.setVisible(true);
     }
 
@@ -95,7 +92,6 @@ public class GestionProductosFrame extends JFrame {
     }
 
     private void accionVolver(ActionEvent e) {
-        // Cerrar el panel actual (GestionProductosFrame)
         dispose();
 
         PanelPrincipal PanelPrincipal = new PanelPrincipal();

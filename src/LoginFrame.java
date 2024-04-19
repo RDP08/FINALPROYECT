@@ -35,19 +35,15 @@ public class LoginFrame extends JFrame {
                 String usuario = campoUsuario.getText();
                 String contraseña = new String(campoContraseña.getPassword());
 
-                // Lógica para iniciar sesión
                 boolean autenticado = inicioSesion.verificarCredenciales(usuario, contraseña);
 
                 if (autenticado) {
-                    // Si las credenciales son válidas, muestra el panel principal
                     mostrarPanelPrincipal();
                 } else {
-                    // Si las credenciales son inválidas, muestra un mensaje de error
                     JOptionPane.showMessageDialog(LoginFrame.this, "Usuario o contraseña incorrectos");
                 }
             }
         });
-
         botonRegistrarse.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

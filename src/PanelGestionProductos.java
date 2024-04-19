@@ -43,7 +43,6 @@ public class PanelGestionProductos extends JPanel {
         botonAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Aquí iría la lógica para agregar un nuevo producto
                 String nuevoProducto = JOptionPane.showInputDialog(PanelGestionProductos.this,
                         "Ingrese el nombre del nuevo producto:");
                 if (nuevoProducto != null && !nuevoProducto.isEmpty()) {

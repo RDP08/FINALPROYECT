@@ -12,7 +12,7 @@ public class InicioSesion {
             statement.setString(1, usuario);
             statement.setString(2, contraseña);
             ResultSet resultado = statement.executeQuery();
-            boolean credencialesCorrectas = resultado.next(); // Verifica si se encontró algún usuario con esas credenciales
+            boolean credencialesCorrectas = resultado.next();
             resultado.close();
             statement.close();
             conexion.close();

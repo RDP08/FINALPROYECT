@@ -83,7 +83,7 @@ public class GestionUsuariosFrame extends JFrame {
 
 
     private void accionActualizarUsuario(ActionEvent e) {
-        int usuarioId = obtenerIdUsuarioDesdeInterfaz(); // Reemplaza esta línea con la forma de obtener el id del usuario
+        int usuarioId = obtenerIdUsuarioDesdeInterfaz();
         if (usuarioId != -1) {
             ActualizarUsuarioFrame actualizarUsuarioFrame = new ActualizarUsuarioFrame(usuarioId);
             actualizarUsuarioFrame.setVisible(true);
@@ -96,14 +96,14 @@ public class GestionUsuariosFrame extends JFrame {
         int filaSeleccionada = tablaUsuarios.getSelectedRow();
         if (filaSeleccionada != -1) {
             DefaultTableModel modelo = (DefaultTableModel) tablaUsuarios.getModel();
-            return (int) modelo.getValueAt(filaSeleccionada, 0); // Suponiendo que el ID del usuario está en la primera columna
+            return (int) modelo.getValueAt(filaSeleccionada, 0);
         } else {
-            return -1; // Si no se ha seleccionado ninguna fila, devolver -1
+            return -1;
         }
     }
 
     private void accionEliminarUsuario(ActionEvent e) {
-        int usuarioId = obtenerIdUsuarioDesdeInterfaz(); // Reemplaza esta línea con la forma de obtener el ID del usuario seleccionado
+        int usuarioId = obtenerIdUsuarioDesdeInterfaz();
 
         if (usuarioId != -1) {
             EliminarUsuarioFrame eliminarUsuarioFrame = new EliminarUsuarioFrame();
@@ -115,10 +115,8 @@ public class GestionUsuariosFrame extends JFrame {
 
 
     private void accionVolver(ActionEvent e) {
-        // Cerrar el panel actual (GestionUsuariosFrame)
         dispose();
 
-        // Mostrar el panel principal (PanelPrincipal)
         PanelPrincipal panelPrincipal = new PanelPrincipal();
         panelPrincipal.setVisible(true);
     }
