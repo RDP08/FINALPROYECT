@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5e49d7-cfd4-4d38-9529-1dcac77fd9ae" name="Changes" comment="ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AgregarProductoForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgregarProductoForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AgregarUsuarioFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AgregarUsuarioFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GestionProductosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionProductosFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GestionUsuariosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionUsuariosFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PanelGestionProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelGestionProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f5e49d7-cfd4-4d38-9529-1dcac77fd9ae" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
@@ -32,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="rdp" />
+      </list>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -39,6 +40,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -63,54 +65,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DBConnection.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DatabaseConnection.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GestionProductosFrame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GestionUsuariosFrame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LoginFrame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PanelGestionProductos.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PanelPrincipal.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ronal/IdeaProjects/proyecto final1/lib/mysql-connector-j-8.3.0.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ActualizarProductoFrame.executor": "Run",
+    "Application.DBConnection.executor": "Run",
+    "Application.DatabaseConnection.executor": "Run",
+    "Application.GestionProductosFrame.executor": "Run",
+    "Application.GestionUsuariosFrame.executor": "Run",
+    "Application.LoginFrame.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PanelGestionProductos.executor": "Run",
+    "Application.PanelPrincipal.executor": "Run",
+    "Application.RegistroFrame.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ronal/IdeaProjects/proyecto final1/lib/mysql-connector-j-8.3.0.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
+    ],
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql_aurora_aws"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.DatabaseConnection">
     <configuration name="DatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DatabaseConnection" />
-      <module name="proyecto final1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestionUsuariosFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GestionUsuariosFrame" />
-      <module name="proyecto final1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LoginFrame" />
       <module name="proyecto final1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,6 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PanelGestionProductos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PanelGestionProductos" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PanelPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PanelPrincipal" />
       <module name="proyecto final1" />
@@ -130,13 +131,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistroFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RegistroFrame" />
+      <module name="proyecto final1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DatabaseConnection" />
-        <item itemvalue="Application.LoginFrame" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.RegistroFrame" />
         <item itemvalue="Application.PanelPrincipal" />
-        <item itemvalue="Application.GestionUsuariosFrame" />
+        <item itemvalue="Application.PanelGestionProductos" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +168,8 @@
       <workItem from="1712703461495" duration="1399000" />
       <workItem from="1713019175416" duration="3035000" />
       <workItem from="1713540112495" duration="317000" />
+      <workItem from="1716650631394" duration="812000" />
+      <workItem from="1722567430383" duration="3144000" />
     </task>
     <task id="LOCAL-00001" summary="ready">
       <option name="closed" value="true" />
@@ -177,15 +187,35 @@
       <option name="project" value="LOCAL" />
       <updated>1713019611888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="listo">
+      <option name="closed" value="true" />
+      <created>1722571402110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722571402110</updated>
+    </task>
+    <task id="LOCAL-00004" summary="probar esto">
+      <option name="closed" value="true" />
+      <created>1722571894555</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722571894555</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready" />
+    <MESSAGE value="listo" />
+    <MESSAGE value="probar esto" />
+    <option name="LAST_COMMIT_MESSAGE" value="probar esto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
